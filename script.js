@@ -21,7 +21,7 @@ for (let index = 0; index < btnsOpenModal.length; index++) {
 }
 
 // Close btn in modal window
-btnCloseModal.addEventListener("click", closeModalWindow())
+btnCloseModal.addEventListener("click", closeModalWindow);
 
 // close Modal by click on overlay
-overlay.addEventListener("click", closeModalWindow());
+overlay.addEventListener("click", closeModalWindow);
