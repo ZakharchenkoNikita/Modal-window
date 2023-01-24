@@ -13,11 +13,13 @@ function closeModalWindow() {
   overlay.classList.add("hidden");
 }
 
+function openModalWindow() {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+
 for (let index = 0; index < btnsOpenModal.length; index++) {
-  btnsOpenModal[index].addEventListener("click", function () {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-  });
+  btnsOpenModal[index].addEventListener("click", openModalWindow);
 }
 
 // Close btn in modal window
