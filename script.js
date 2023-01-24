@@ -20,7 +20,8 @@ for (let index = 0; index < btnsOpenModal.length; index++) {
   });
 }
 
-btnCloseModal.addEventListener("click", function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-});
+// Close btn in modal window
+btnCloseModal.addEventListener("click", closeModalWindow())
+
+// close Modal by click on overlay
+overlay.addEventListener("click", closeModalWindow());
